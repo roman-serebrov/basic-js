@@ -21,7 +21,7 @@ export default class DepthCalculator {
     
     countArray(arr) {
     
-        if(arr.filter(i => Array.isArray(i)).length != 0){
+        if(arr.filter(i => Array.isArray(i)).length !== 0){
             return 1 + this.countArray([].concat(...arr.filter(i => Array.isArray(i))));
          } else {
             return +1;
