@@ -168,7 +168,7 @@ describe('What season', () => {
             assert.equal(getSeason(new Date(1375, 5, 1, 12, 18, 41, 652)), 'summer');
             assert.equal(getSeason(new Date(909, 5, 12, 16, 55, 52, 635)), 'summer');
             assert.equal(getSeason(new Date(769, 4, 31, 18, 35, 17, 331)), 'spring');
-            expect(getSeason(new Date(1036, 9, 23, 13, 57, 31, 880))).to.match(/autumn|fall/);
+            expect(getSeason(new Date(getSeason( new Date())))).to.match(/autumn|fall/);
             expect(getSeason(new Date(1596, 8, 27, 15, 53, 55, 594))).to.match(/autumn|fall/);
             expect(getSeason(new Date(1415, 9, 25, 19, 34, 45, 741))).to.match(/autumn|fall/);
             assert.equal(getSeason(new Date(235, 0, 0, 17, 9, 0, 802)), 'winter');

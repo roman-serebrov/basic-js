@@ -1,7 +1,7 @@
 import { expect, assert } from 'chai';
 import { testOptional, checkForThrowingErrors, CONSTANTS } from '../extensions/index.js';
 import chainMaker from '../src/simple-chain.js';
-
+console.log(chainMaker)
 const { CORRECT_RESULT_MSG } = CONSTANTS;
 
 it.optional = testOptional;
